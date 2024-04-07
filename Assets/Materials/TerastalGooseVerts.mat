@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TerastalGoose
+  m_Name: TerastalGooseVerts
   m_Shader: {fileID: -6465566751694194690, guid: 6afb35f6a179c98468435b79dbbb21fa,
     type: 3}
   m_Parent: {fileID: 0}
@@ -94,28 +94,31 @@ Material:
     - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Color_Reflection_Strength: 0.2
+    - _Color_Reflections: 0.25
     - _Cull: 2
     - _Cutoff: 0.5
+    - _Cycle_Speed: 0.2
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _EnvironmentStrength: 0.5
-    - _FresnelPower: 5
+    - _FresnelPower: 8
     - _FresnelStrength: 2
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _GlowStrength: 1
     - _MODE: 1
-    - _Metallic: 0.5
+    - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ReflectionStrength: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -131,6 +134,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColor: {r: 1.1213953, g: 3.97177, b: 6.792453, a: 1}
+    - _Fresnel_Color: {r: 3.9570842, g: 14.015244, b: 23.968628, a: 1}
+    - _Reflection_Thresholds: {r: 0.6, g: 0.8, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3495700988753490246

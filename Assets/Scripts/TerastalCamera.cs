@@ -13,7 +13,7 @@ public class TerastalCamera : MonoBehaviour
     [SerializeField] private AnimationCurve speedCurve;
     [SerializeField] private AnimationCurve rotationCurve;
 
-    [SerializeField] private Animator targetAnim;
+    [SerializeField] private TerastalGoose terastalGoose;
 
     private void Update()
     {
@@ -25,6 +25,8 @@ public class TerastalCamera : MonoBehaviour
 
     private IEnumerator RotateAnimation()
     {
+        terastalGoose.Terastallize();
+
         Camera.main.fieldOfView = 10.0f;
 
         for(float t = 0.0f; t < duration; t += Time.deltaTime)
@@ -49,7 +51,6 @@ public class TerastalCamera : MonoBehaviour
 
     private IEnumerator FinalFocus()
     {
-        targetAnim.SetTrigger("Honk");
         Vector3 startPos = transform.position;
 
         for(float t = 0.0f; t < 1.0f; t += Time.deltaTime)
@@ -64,5 +65,7 @@ public class TerastalCamera : MonoBehaviour
 
             yield return null;
         }
+
+        terastalGoose.Honk();
     }
 }
