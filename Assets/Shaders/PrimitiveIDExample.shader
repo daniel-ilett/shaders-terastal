@@ -1,4 +1,4 @@
-Shader "Terastal/Test"
+Shader "Terastal/PrimitiveIDExample"
 {
     Properties
     {
@@ -35,13 +35,11 @@ Shader "Terastal/Test"
             struct appdata
             {
                 float4 positionOS : Position;
-				//uint primitiveID : SV_PrimitiveID;
             };
 
             struct v2f
             {
                 float4 positionCS : SV_Position;
-				//nointerpolation uint primitiveID : SV_PrimitiveID;
             };
 
 			CBUFFER_START(UnityPerMaterial)
@@ -52,7 +50,6 @@ Shader "Terastal/Test"
             {
                 v2f o;
                 o.positionCS = TransformObjectToHClip(v.positionOS.xyz);
-				//o.primitiveID = v.primitiveID;
                 return o;
             }
 

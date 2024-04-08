@@ -920,8 +920,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: -0.004165965, y: 0.9836787, z: 0.022968937, w: 0.17841363}
-  m_LocalPosition: {x: -0.7501233, y: 0.30019718, z: 1.9998678}
+  m_LocalRotation: {x: -0.0041333647, y: 0.9836527, z: 0.022766925, w: 0.17858341}
+  m_LocalPosition: {x: -0.7506799, y: 0.3010866, z: 1.9992713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1866,7 +1866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774680707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5063, y: 0, z: 2.548}
+  m_LocalPosition: {x: -1.5063, y: 0, z: 0.048000097}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3636,7 +3636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636001685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -0.5, z: 2.5}
+  m_LocalPosition: {x: -1.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4109,6 +4109,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2022631019655077116, guid: 5a72765b6af10de4c9cf673f5083b873,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2892833980061932428, guid: 5a72765b6af10de4c9cf673f5083b873,
         type: 3}
       propertyPath: m_IsActive
@@ -4124,11 +4129,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5103469972109889104, guid: 5a72765b6af10de4c9cf673f5083b873,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5286948742778504453, guid: 5a72765b6af10de4c9cf673f5083b873,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 688caba1475bb9a4781a69becf0aa1d4, type: 2}
+      objectReference: {fileID: 2100000, guid: 60017250dbd7a3b48bfe3016d248f64f, type: 2}
     - target: {fileID: 8187757314728111063, guid: 5a72765b6af10de4c9cf673f5083b873,
         type: 3}
       propertyPath: m_RootOrder
@@ -4188,6 +4198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GooseBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156061712391891502, guid: 5a72765b6af10de4c9cf673f5083b873,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
